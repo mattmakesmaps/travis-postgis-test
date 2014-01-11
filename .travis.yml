@@ -8,10 +8,10 @@ install:
 
 # database creation
 before_script:
-  - psql -c 'create database travis_postgis2;' -U postgres
-  - psql -c 'CREATE EXTENSION postgis;' -U postgres -d travis_postgis2
-  - psql -c 'CREATE EXTENSION postgis_topology;' -U postgres -d travis_postgis2
-  - psql -f test_data.sql -U postgres -d travis_postgis2
+  - psql -c 'create database travis_postgis;' -U postgres
+  - psql -c 'CREATE EXTENSION postgis;' -U postgres -d travis_postgis
+  - psql -c 'CREATE EXTENSION postgis_topology;' -U postgres -d travis_postgis
+  - psql -f test_data.sql -U postgres -d travis_postgis
 
 # command to run tests
 script: nosetests --verbose
