@@ -8,4 +8,8 @@ travis-postgis-test
 Provide an example configuration demonstrating the creation of a PostGIS-enabled database
 via Travis CI.
 
-Notes to follow...
+- `.travis.yml`: The example Travis CI configuration file.
+- `test_data.sql`: Test geometries to be loaded into a testing DB by Travis CI.
+- `test_example.py`: Unit test example utilizing PostGIS DB created by Travis CI.
+
+Full notes can on this [blog](http://mattmakesmaps.com/blog/2014/01/11/configure-postgis-with-travis-ci/).
