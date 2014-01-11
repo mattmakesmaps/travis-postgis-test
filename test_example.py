@@ -12,7 +12,7 @@ class TestDBConnection(object):
             'host':'localhost',
             'port':5432,
             'user':'postgres',
-            'database':'travis_postgis'
+            'database':'travis_postgis2'
         }
 
     def test_connection(self):
@@ -29,7 +29,7 @@ class Test_Points_ST_AsGeoJSONCall(object):
             'host':'localhost',
             'port':5432,
             'user':'postgres',
-            'database':'travis_postgis'
+            'database':'travis_postgis2'
         }
         self.db = connect(**self.connection_args).cursor(cursor_factory=RealDictCursor)
         self.select_statement = 'SELECT id, name, ST_AsGeoJSON(geom) FROM test_data.test_points;'
