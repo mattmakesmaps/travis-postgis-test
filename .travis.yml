@@ -14,4 +14,4 @@ before_script:
   - psql -f test_data.sql -U postgres -d travis_postgis
 
 # command to run tests
-script: nosetests
+script: nosetests --verbose
