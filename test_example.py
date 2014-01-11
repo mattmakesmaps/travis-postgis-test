@@ -11,7 +11,7 @@ class TestDBConnection(object):
         self.connection_args = {
             'host':'localhost',
             'port':5432,
-            'user':'matt',
+            'user':'postgres',
             'database':'travis_postgis'
         }
 
